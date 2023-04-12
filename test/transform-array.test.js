@@ -93,6 +93,7 @@ describe('Transform array', () => {
             for (let i = 0; i < 3; i += 1) {
                 const { input, output } = createSample(i);
                 console.log(input, output);
+
                 assert.deepStrictEqual(transform(input), output);
             }
         });
@@ -108,4 +109,3 @@ describe('Transform array', () => {
 
     });
 });
-
